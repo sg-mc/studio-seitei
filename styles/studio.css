@@ -1,0 +1,24 @@
+/* 2x2 グリッドレイアウト用のカスタムスタイル */
+[data-ui="DocumentListPane"] [data-testid="document-grid-pane"] {
+  grid-template-columns: repeat(2, 1fr) !important;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* カードのスタイル調整 */
+[data-ui="Card"][data-scheme="light"] {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+[data-ui="Card"][data-scheme="dark"] {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+}
+
+/* カードホバー時のエフェクト */
+[data-ui="Card"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: all 0.2s ease;
+}
